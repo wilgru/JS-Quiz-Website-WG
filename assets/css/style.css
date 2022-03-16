@@ -3,7 +3,7 @@ html {
     font-family: "league spartan", "courier new";
 }
 
-h1, h2, p {
+h1, h2 {
     text-align: center;
     font-family: "Space grotesk", "courier new";
 }
@@ -20,6 +20,10 @@ button {
     background-color: white;
     border: solid black 2px;
     border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .flex-container {
@@ -59,6 +63,7 @@ button {
 
 .leaderboard-container-item p {
     margin-bottom: 0;
+    text-align: center;
 }
 
 .leaderboard-container-item h3 {
