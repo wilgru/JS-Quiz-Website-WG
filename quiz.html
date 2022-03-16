@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400;700;900&family=Manrope:wght@200;400;700&family=Space+Grotesk:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <section class="flex-container">
+            <section>
+                <h2 id="question-h2">
+                    Question
+                </h2>
+                <ul id="choices-list">
+                </ul>
+                <p id="choice-outcome">
+                </p>
+            </section>
+            <!-- save score card -->
+            <section id="save-score-card">
+                <h3>save your score</h3>
+                <form action="/index.html" method="post" id="initials-entry-form" name="initials-entry-form" >
+                    <label for="initials">your initials</label>
+                    <input type="text" maxlength="3" id="initials" name="initials" required>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <section id="footer-container">
+            <p style="display:inline-block;" id="progress"></p>
+            <p style="display:inline-block;" id="time-left"></p>
+        </section>
+    </footer>
+</body>
+
+<script src="./assets/js/quizScript.js"></script>
+</html>

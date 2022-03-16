@@ -5,27 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Quiz!</title>
-    <style rel="stylesheet" href="./assets/css/normalize.css"></style>
-    <style rel="stylesheet" href="./assets/css/style.css"></style>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400;700;900&family=Manrope:wght@200;400;700&family=Space+Grotesk:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header></header>
-    <main>
-        <section>
-            <h2>
-                Leaderboard:
-            </h2>
-            <ul>
-            </ul>
+    <header>
+        <section class="flex-container">
+            <section id="heading-container">
+                <h1>JavaScript Quiz!</h1>
+            </section>
         </section>
-        <section>
-            <button id="start-game">
-                Start Quiz
-            </button>
+    </header>
+    <main>
+        <section class="flex-container">
+            <section id="leaderboard-container">
+                <h2>
+                    Leaderboard:
+                </h2>
+                <section id="leaderboard-list">
+                    <ul id="leaderboard-list-initials">
+                        <h3>
+                            Initials
+                        </h3>
+                    </ul>
+                    <ul id="leaderboard-list-time">
+                        <h3>
+                            score
+                        </h3>
+                    </ul>
+                    <ul id="leaderboard-list-correct">
+                        <h3>
+                            correct
+                        </h3>
+                    </ul>
+                </section>
+            </section>
+            <section id="start-game-container">
+                <button id="start-game">
+                    Start Quiz
+                </button>
+            </section>
         </section>
     </main>
     <footer></footer>
 </body>
 
-<script src="./assets/js/script.js"></script>
+<script src="./assets/js/indexScript.js"></script>
 </html>

@@ -1,0 +1,103 @@
+/* universal */
+html {
+    font-family: "league spartan", "courier new";
+}
+
+h1, h2, p {
+    text-align: center;
+    font-family: "Space grotesk", "courier new";
+}
+
+h2, h3, p {
+    margin-bottom: 0;
+}
+
+
+ul {
+    margin: auto 10px;
+    padding: 0;
+    width: fit-content;
+}
+
+li {
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 5px;
+    min-width: 80px;
+    background-color: white;
+    border: solid black 2px;
+    border-radius: 5px;
+}
+
+.flex-container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+/* home page */
+#heading-container {
+    margin: 20px auto 0 auto;
+    width: 50vw;
+    border: dotted black 2px;
+    border-radius: 5px;
+    background-color:khaki;
+}
+
+#leaderboard-container {
+    margin-bottom: 20px;
+}
+
+#leaderboard-list {
+    display: flex;
+    justify-content: center;
+}
+
+#start-game-container {
+    display: flex;
+    justify-content: center;
+}
+
+#start-game {
+    background-color: khaki;
+}
+
+/* quiz page */
+#question-h2 {
+    margin: 20px auto;
+    padding: 10px;
+    width: fit-content;
+    background-color:khaki;
+    border: dotted black 2px;
+    border-radius: 5px;
+}
+
+#choices-list {
+    margin: auto;
+}
+
+#save-score-card {
+    margin: auto;
+    padding: 5px;
+    width: fit-content;
+    display: none;
+    background-color:khaki;
+    border: solid black 2px;
+    border-radius: 5px;
+}
+
+/* footer */
+#footer-container {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+}
