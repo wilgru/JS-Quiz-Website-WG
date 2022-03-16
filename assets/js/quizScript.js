@@ -31,10 +31,10 @@ const questions = {
     question3: {
         question: "Which of the following is NOT considered 'falsy'?",
         choices: {
-            choice1: "null",
+            choice1: "0",
             choice2: "\"\"",
             choice3: "'false'",
-            choice4: "!true",
+            choice4: "null",
         },
         correctAnswer: "3"
     },
@@ -113,6 +113,11 @@ function gameClock() {
             // otherwise decrement counter and display the time left
             timeLeft--;
             timeLeftP.innerHTML = "<strong>Time Left: </strong>" + timeLeft
+
+            // if time is a quater left then change it to red
+            if (timeLeft <= totatTime/4) {
+                timeLeftP.style.color = "red"; 
+            }
         }
     }, 1000)
 }
@@ -124,7 +129,7 @@ function renderQuestion() {
     // render the current question text
     questionH2.innerHTML = 'Question ' + (currentQuestionIndex+1) + ': <br>' + questions[currentQuestion].question;
 
-    // empty thhe list and get the choices for the current question ready
+    // empty the list and get the choices for the current question ready
     choicesList.textContent = '';
     var currentChoices = Object.values(questions[currentQuestion].choices);
 

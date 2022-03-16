@@ -1,4 +1,5 @@
 var startGameButton = document.getElementById("start-game");
+var leaderboardList = document.getElementById("leaderboard-list");
 var leaderboardListInitials = document.getElementById("leaderboard-list-initials");
 var leaderboardListTime = document.getElementById("leaderboard-list-time");
 var leaderboardListCorrect = document.getElementById("leaderboard-list-correct");
@@ -44,10 +45,15 @@ function sortLeaderboard() {
 function renderLeaderboard() {
     getLocalLeaderboard()
 
-    for (i = 0; i < leaderboard.length; i++) {
-        leaderboardListInitials.innerHTML = leaderboardListInitials.innerHTML + "<p>" + leaderboard[i].initials + "</p>"
-        leaderboardListTime.innerHTML = leaderboardListTime.innerHTML + "<p>" + leaderboard[i].time + "</p>"
-        leaderboardListCorrect.innerHTML = leaderboardListCorrect.innerHTML + "<p>" + leaderboard[i].correct + "</p>"
+    if (leaderboard.length === 0) {
+        leaderboardList.innerHTML = "<p> No leaderboard scores yet. Click 'Start Quiz' to play and save a score here! <p>"
+    
+    } else {
+        for (i = 0; i < leaderboard.length; i++) {
+            leaderboardListInitials.innerHTML = leaderboardListInitials.innerHTML + "<p>" + leaderboard[i].initials + "</p>"
+            leaderboardListTime.innerHTML = leaderboardListTime.innerHTML + "<p>" + leaderboard[i].time + "</p>"
+            leaderboardListCorrect.innerHTML = leaderboardListCorrect.innerHTML + "<p>" + leaderboard[i].correct + "</p>"
+        }
     }
 }
 
