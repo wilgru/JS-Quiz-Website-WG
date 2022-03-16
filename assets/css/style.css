@@ -68,6 +68,7 @@ button:hover {
 
 .leaderboard-container-item h3 {
     margin-top: 0;
+    text-align: center;
 }
 
 #start-game-container {
