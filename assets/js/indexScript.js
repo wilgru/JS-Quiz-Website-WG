@@ -31,7 +31,7 @@ function sortLeaderboard() {
                 [leaderboard[j+1],leaderboard[j]] = [leaderboard[j],leaderboard[j + 1]];
 
             } else if (leaderboard[j + 1].time === leaderboard[j].time) {
-                if(leaderboard[j + 1].correct < leaderboard[j].correct){
+                if(leaderboard[j + 1].correct > leaderboard[j].correct){
                     //swap
                     [leaderboard[j+1],leaderboard[j]] = [leaderboard[j],leaderboard[j + 1]];
                 }

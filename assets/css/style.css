@@ -8,17 +8,6 @@ h1, h2, p {
     font-family: "Space grotesk", "courier new";
 }
 
-h2, h3, p {
-    margin-bottom: 0;
-}
-
-
-ul {
-    margin: auto 10px;
-    padding: 0;
-    width: fit-content;
-}
-
 li {
     display: block;
     display: flex;
@@ -48,16 +37,36 @@ button {
     background-color:khaki;
 }
 
-#leaderboard-container {
-    margin-bottom: 20px;
-}
-
 #leaderboard-list {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
 }
 
+#leaderboard-container {
+    margin-top: 20px;
+}
+
+#leaderboard-container h2 {
+    margin: 0;
+}
+
+.leaderboard-container-item {
+    margin: auto 10px;
+    padding: 0;
+    width: fit-content;
+}
+
+.leaderboard-container-item p {
+    margin-bottom: 0;
+}
+
+.leaderboard-container-item h3 {
+    margin-top: 0;
+}
+
 #start-game-container {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
 }
@@ -78,6 +87,8 @@ button {
 
 #choices-list {
     margin: auto;
+    padding: 0;
+    width: fit-content;
 }
 
 #save-score-card {
@@ -88,6 +99,16 @@ button {
     background-color:khaki;
     border: solid black 2px;
     border-radius: 5px;
+}
+
+#save-score-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#save-score-header h3, p {
+    margin: 10px;
 }
 
 /* footer */

@@ -5,6 +5,7 @@ var choiceOutcomeP = document.getElementById("choice-outcome");
 var timeLeftP = document.getElementById("time-left");
 var progressP = document.getElementById("progress");
 var initialsForm = document.getElementById("initials-entry-form");
+var yourScoreHeader = document.getElementById("your-score-header");
 
 const questions = {
     question1: {
@@ -87,6 +88,7 @@ function endGame() {
     choicesList.style.display = "none";
     choiceOutcomeP.textContent = "";
     saveScoreCard.style.display = "block";
+    yourScoreHeader.textContent = "Your score: " + timeLeft;
 }
 
 // handles game count down and time out 
