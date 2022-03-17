@@ -97,6 +97,10 @@ button:hover {
     width: fit-content;
 }
 
+#choice-outcome {
+    text-align: center;
+}
+
 #save-score-card {
     margin: auto;
     padding: 5px;
