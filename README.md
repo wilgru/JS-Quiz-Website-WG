@@ -6,8 +6,8 @@ This is a JavaScript quiz website that quizes you on random JS facts, made using
 
 ---
 
-![alt text](https://github.com/wilgru/Wills-JS-Quiz-Website/blob/main/Assets/1.png)
-![alt text](https://github.com/wilgru/Wills-JS-Quiz-Website/blob/main/Assets/2.png)
+![alt text](https://github.com/wilgru/Wills-JS-Quiz-Website/blob/main/assets/images/1.png)
+![alt text](https://github.com/wilgru/Wills-JS-Quiz-Website/blob/main/assets/images/2.png)
 
 ### Website 
 
