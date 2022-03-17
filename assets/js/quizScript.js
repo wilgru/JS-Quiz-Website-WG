@@ -39,7 +39,7 @@ const questions = {
         correctAnswer: "3"
     },
     question4: {
-        question: "Say 'myObj' is an object variable with key value pairs defined in it, which of the following returns a list of keys in an object?",
+        question: "Say 'myObj' is an object variable with key value pairs defined in it, which of the following returns a list of keys in the object?",
         choices: {
             choice1: "myObj.keys()",
             choice2: "Object.myObj.keys()",
@@ -48,6 +48,16 @@ const questions = {
         },
         correctAnswer: "4"
     },
+    question5: {
+        question: "Which of the following is NOT a JavaScript data type?",
+        choices: {
+            choice1: "Symbol",
+            choice2: "None",
+            choice3: "Undefined",
+            choice4: "BigInt",
+        },
+        correctAnswer: "2"
+    }
 }
 
 // question related variables
@@ -127,7 +137,7 @@ function renderQuestion() {
     answereSelected = false;
 
     // render the current question text
-    questionH2.innerHTML = 'Question ' + (currentQuestionIndex+1) + ': <br>' + questions[currentQuestion].question;
+    questionH2.innerHTML = 'Question ' + (currentQuestionIndex+1) + ': <br><span style="font-weight:initial;">' + questions[currentQuestion].question + '</span>';
 
     // empty the list and get the choices for the current question ready
     choicesList.textContent = '';
